@@ -8,13 +8,17 @@ This repository aims to show how to create simple reverse proxy in Go.
 
 ## Intro
 
-![image]([https://github.com/harmancioglue/go-worker-pool-pattern/assets/27441734/93f76717-0518-4f09-ae01-4c8b1fcf2395](https://miro.medium.com/v2/resize:fit:1400/1*_BUaIvoqUTqxyZvyH9ky-A.png))
+![image](![image](https://github.com/user-attachments/assets/24fbe259-0b52-44af-84dc-9c76cdf1285b))
 
 A reverse proxy is a server that sits between client devices and a backend server. It receives requests from clients and forwards them to the appropriate backend server. 
 
 The backend server processes the request and sends the response back to the reverse proxy, which then forwards it to the client. 
 
 This setup helps improve security, load balancing, and scalability by abstracting the backend server's details from the client and managing multiple servers efficiently.
+
+According to our project, requests are forwarded to different services based on the paths to which the requests are made.
+
+Example: /server1 http://server1:8081
 
 ## Run
 
